@@ -2,6 +2,7 @@
 import Link from "next/link";
 import ElavizeComponent from "@/components/elavize"
 import AWSComponent from "@/components/aws";
+import TypewriterEffect from "@/components/typewriter";
 
 export default function Home() {
   return (
@@ -12,7 +13,8 @@ export default function Home() {
                   <p className="text-sm font-semibold tracking-wide sm:text-base md:text-sm/looser">Introducing</p>
                   <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl/looser">Martin Lacsamana</h1>
                   <div className="mx-auto max-w-3xl text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                    <p>Thrill-Seeker. Aspiring Engineer.</p>
+                    {/* <p>Thrill-Seeker. Aspiring Engineer.</p> */}
+                    <TypewriterEffect text="Thhrill-Seeker. Aspiring Engineer." typingSpeed={80}/>
                   </div>
 
                   
@@ -35,7 +37,7 @@ export default function Home() {
 
 
               <div className="flex justify-center mb-12">
-                <Link href="#traveling" className="bg-black text-white font-semibold py-4 px-6 rounded-full hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 shadow-lg transition ease-in duration-200 text-center text-base">
+                <Link href="#dominoes" className="bg-black text-white font-semibold py-4 px-6 rounded-full hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 shadow-lg transition ease-in duration-200 text-center text-base">
                
                     Explore My Purpose
                
@@ -44,15 +46,15 @@ export default function Home() {
 
         
 
-            <div className="space-y-3 pt-12 " id="traveling">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">They say a picture is worth a thousand words.</h2>
+            <div className="space-y-3 pt-24 " id="dominoes">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl pb-4">They say a picture is worth a thousand words.</h2>
                 <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Let's test that theory with a couple.
+                  What can the following pictures tell us?
                 </p>
             </div>
 
             {/* Images section*/}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-8 pb-4">
               <div className="border border-gray-300 pb-2 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 transition-transform duration-50 ease-in-out hover:scale-105">
                   <img
                     alt="Gallery Image 1"
@@ -88,10 +90,9 @@ export default function Home() {
 
                   <div>
                       <p className="md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-800">
-                        <span className="font-semibold">At first glance, these are just regular photos. </span>
-                        In every snapshot of my life's journey, whether it's leaping from a plane, exploring the depths of the
-                        ocean, or sharing knowledge with peers, the common thread has been a willingness to embrace fear and take
-                        risks. This philosophy has not only shaped my personal adventures but has also been a driving force in my
+                        <span className="font-semibold">Do the next scariest thing. </span>
+                        Whether it's leaping from a plane at 13,500 feet in the air, swimming with oceanic beasts 4 times bigger than you, or putting yourself in front of professionals as a complete noob, the theme was constant. <span className="font-semibold">Do it if it makes you uncomfortable. </span>
+                        the common thread has been a willingness to embrace fear and take risks. This philosophy has not only shaped my personal adventures but has also been a driving force in my
                         professional growth as an engineer. By stepping out of my comfort zone and facing challenges head-on, I've
                         learned that the most rewarding experiences come from the moments when we dare to venture beyond the
                         familiar.
@@ -136,7 +137,7 @@ export default function Home() {
           <div className="space-y-3">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">My Latest Domino Takedowns</h2>
             <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Do the next scariest thing.
+              Finding my niche.
             </p>
           </div>
           
