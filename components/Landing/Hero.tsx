@@ -1,5 +1,5 @@
 import TypewriterEffect from "@/components/typewriter";
-
+import Image from 'next/image';
 
 const Hero = () => {
     return (
@@ -9,27 +9,26 @@ const Hero = () => {
                 <div className="space-y-3">
                     <p className="text-sm font-semibold tracking-wide sm:text-base md:text-sm/looser">Introducing</p>
                     <h1 className="text-4xl font-semibold tracking-tighter sm:text-5xl md:text-6xl/looser">Martin Lacsamana</h1>
-                    <div className="mx-auto max-w-3xl text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                    <div className="mx-auto text-sm sm:text-lg max-w-3xl text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                         <TypewriterEffect text="AWS Certified Developer. Expert Google Searcher." typingSpeed={50}/>
                     </div>
                 </div>
 
                 {/* HEADSHOT */}
+
                 <div className="flex flex-col justify-center items-center md:-mt-8 mb-2">
-                    <img
-                        alt="Martin Lacsamana"
-                        className="overflow-hidden rounded-md object-cover w-full max-w-[200px] sm:max-w-xs"
-                        src="https://personal-website-company-images.s3.us-west-1.amazonaws.com/MartinAvatarNoBackground.png"
-                    />
+                    <div className="relative w-full max-w-[200px] sm:max-w-sm" style={{ aspectRatio: '1 / 1' }}>
+                        <Image
+                            alt="Martin Lacsamana"
+                            className="rounded-md"
+                            src="https://personal-website-company-images.s3.us-west-1.amazonaws.com/MartinAvatarNoBackground.png"
+                            layout="fill"
+                            objectFit="contain"
+                            priority
+                        />
+                    </div>
                     <span className="text-xs text-gray-400 mt-2">(AI-generated)</span>
                 </div>
-                
-                {/* EXPLORE BUTTON */}
-                {/* <div className="flex justify-center">
-                    <Link href="#dominoes" className="bg-black text-white font-normal py-4 px-6 rounded-full hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 shadow-lg transition ease-in duration-200 text-center text-base">
-                        Explore My Why
-                    </Link>
-                </div> */}
             </div>
         </div>
     )
