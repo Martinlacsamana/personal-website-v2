@@ -19,7 +19,7 @@ const Timeline = () => {
     }, []);
 
     return (
-        <div className="flex justify-center" style={{background: 'white'}}>
+        <div className="flex justify-center">
             <div className="min-h-screen">
                 <h1 className="text-2xl text-center tracking-tighter text-gray-800 md:text-4xl md:looser pb-2">My Journey Through Time</h1>
                 <h1 className="text-md text-center tracking-tighter text-gray-500 md:text-xl md:looser pb-12">Transforming observations into reality.</h1>
