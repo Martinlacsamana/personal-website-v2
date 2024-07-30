@@ -1,18 +1,20 @@
+"use client"
 import React from 'react'
 import Hero from "@/components/Landing/Hero";
 import CodeGraphic from "@/components/Landing/CodeGraphic";
-import Dominoes from "@/components/Landing/Dominoes";
 import ShortBackground from '@/components/Landing/ShortBackground';
-import DominoesHeader from '@/components/Landing/DominoesHeader';
-import Resume
- from '@/components/Landing/Resume';
+import Timeline from '@/components/Landing/Timeline';
+
 export default function Home() {
+
+
   return (
-    <div className="flex flex-col justify-center items-center ">
+    
+    <div className="flex flex-col justify-center items-center space-y-12 pb-32">
         <Hero/>
         <CodeGraphic/>
         <ShortBackground/>
-        <Resume/>
+        <Timeline/>
         
     </div>
   );

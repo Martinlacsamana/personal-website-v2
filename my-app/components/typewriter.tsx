@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 interface Props {
     text: string;
@@ -7,16 +7,20 @@ interface Props {
 }
 
 const TypewriterEffect: React.FC<Props> = ({ text, typingSpeed = 50 }) => {
-  const [displayedText, setDisplayedText] = useState('');
+  const displayedTextRef = useRef('');
   const [isTypingComplete, setIsTypingComplete] = useState(false);
+  const [, setTrigger] = useState(0); // State to trigger re-renders
 
   useEffect(() => {
     let index = 0;
+    displayedTextRef.current = ''; // Reset displayed text when text prop changes
+    setIsTypingComplete(false); // Reset typing complete status
+
     const interval = setInterval(() => {
       if (index < text.length) {
-        console.log(displayedText)
-        setDisplayedText((prev) => prev + text.charAt(index));
+        displayedTextRef.current += text.charAt(index);
         index++;
+        setTrigger((prev) => prev + 1); // Trigger re-render
       } else {
         clearInterval(interval);
         setIsTypingComplete(true); // Typing is complete, stop showing the cursor
@@ -28,7 +32,7 @@ const TypewriterEffect: React.FC<Props> = ({ text, typingSpeed = 50 }) => {
 
   return (
     <>
-      <p>{displayedText}<span className={isTypingComplete ? 'hidden' : 'cursor'}>|</span></p>
+      <p>{displayedTextRef.current}<span className={isTypingComplete ? 'hidden' : 'cursor'}>|</span></p>
       <style jsx>{`
         .cursor {
           opacity: 1;

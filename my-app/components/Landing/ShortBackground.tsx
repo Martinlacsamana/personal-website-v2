@@ -1,35 +1,43 @@
 import React from 'react'
-import { ArrowUpRight } from 'lucide-react'
 
 const ShortBackground = () => {
-
     return (
-        <div className="flex w-full pt-8">
-            {/* TEXT ON L.H.S*/}
-            <div className="flex flex-col items-center justify-center text-left w-1/2">
-                <div className="w-2/3 space-y-2">
-                    <p className="text-3xl font-normal text-left font-sans text-[1.313rem] font-[360] leading-[135%] tracking-[.02em]">
-                        So, I shut my mouth growing up (tried to) and observed from afar.
+        <div className="flex flex-col items-center justify-center pt-8 pb-4">
+
+            
+            <div className="flex w-4/5 items-center">
+                
+                {/* TEXT */}
+                <div className="w-full flex flex-col items-center justify-center w-full space-y-2 text-left">
+                    
+                    <p className="w-2/3  text-2xl font-normal tracking-[-1.20px] leading-[51.4px] bg-gradient-to-b from-black to-gray-400 bg-clip-text text-transparent text-black">
+                        Be relentless in the face of adversity.
                     </p>
-                    <p className="text-md font-light text-gray-500 text-left pb-4">
-                        I learned the importance of facing the unknown - despite how scary it may be. This is where I learned about <span className="font-bold">using dominoes to overcome fear.</span>
+                    <p className="w-2/3 text-md font-light text-gray-500 pb-4">
+                        is what my parents would always tell me growing up - that in order to achieve things I&apos;ve never had <span className="font-bold"> I&apos;d have to do things I&apos;ve never done. </span>
+                        My mission then became to observe from afar, learn from my role models, and strive to make my own mark.
                     </p>
-                    <button className="bg-gray-100 text-gray-800 font-normal py-2 px-4 border border-gray-300 rounded-full hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 transition ease-in duration-200 text-center text-base">
-                        <div className="flex items-center justify-center space-x-1">
-                            <p>My Background</p>
-                            <ArrowUpRight size={20}/>
-                        </div>
-                    </button>
+                    
                 </div>
+
+                {/* PICTURE */}
+                <div className="w-full flex justify-center items-center">
+                    <div className="w-3/4 pt-2 pb-6">   
+                        <img src="https://personal-website-company-images.s3.us-west-1.amazonaws.com/observing.JPG" alt="Observing during childhood" className="w-full h-auto object-cover rounded-lg shadow"/>
+                    </div>
+                </div>
+                
+
+                {/* <button className="bg-gray-100 text-gray-800 font-normal py-2  px-4 border border-gray-300 rounded-full hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 transition ease-in duration-200 text-center text-base">
+                    <div className="flex items-center justify-center space-x-1">
+                        <p>My Background</p>
+                        <ArrowUpRight size={20}/>
+                    </div>
+                </button> */}
             </div>
 
-            {/* PICTURE ON R.H.S*/}
-            <div className="flex items-center justify-center w-1/2 py-12 pr-32">   
-                <img src="/observing.JPG" alt="Observing during childhood" className="w-full h-auto object-cover rounded-lg shadow"/>
-            </div>
         </div>
     )
-
 }
 
 export default ShortBackground
