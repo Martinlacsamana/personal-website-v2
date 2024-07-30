@@ -10,7 +10,7 @@ const Timeline = () => {
                     delay: 300,
                     distance: '50px',
                     origin: 'bottom',
-                    reset: true,
+                    reset: false,
                     easing: 'ease-in-out',
                     interval: 200
                 });
@@ -21,8 +21,8 @@ const Timeline = () => {
     return (
         <div className="flex justify-center" style={{background: 'white'}}>
             <div className="min-h-screen">
-                <h1 className="text-xl text-center tracking-tighter text-gray-800 sm:text-4xl md:looser pb-2">My Journey Through Time</h1>
-                <h1 className="text-xl text-center tracking-tighter text-gray-500 md:looser pb-12">Manifesting observations into reality.</h1>
+                <h1 className="text-2xl text-center tracking-tighter text-gray-800 md:text-4xl md:looser pb-2">My Journey Through Time</h1>
+                <h1 className="text-md text-center tracking-tighter text-gray-500 md:text-xl md:looser pb-12">Transforming observations into reality.</h1>
                 <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                     <TimelineItem
                         year="2020"

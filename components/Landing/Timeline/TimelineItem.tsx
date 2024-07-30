@@ -12,7 +12,7 @@ interface TimelineItemProps {
 
 const TimelineItem: React.FC<TimelineItemProps> = ({ year, title, description, position, svg }) => {
   return (
-    <li className="timeline-item">
+    <li className="timeline-item pb-2 px-6 md:pb-0">
       <div className="timeline-middle m-4">
         {svg ? (
           <img src={svg} className="h-16 w-16" alt="" />
@@ -23,9 +23,9 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ year, title, description, p
         )}
       </div>
 
-      <div className={`w-3/5 timeline-${position} ${position === 'start' ? 'text-right' : 'text-left'} mb-10`}>
+      <div className={`w-full md:w-3/5 timeline-${position} md:${position === 'start' ? 'text-right' : 'text-left'} text-left mb-10`}>
         <time className="font-mono italic text-black text-sm">{year}</time>
-        <div className="text-md font-semibold ">{title}</div>
+        <div className="text-md font-semibold">{title}</div>
         <div className="text-black text-sm">{description}</div>
       </div>
       <hr />

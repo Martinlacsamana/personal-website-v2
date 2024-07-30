@@ -10,15 +10,15 @@ const Hero = () => {
                     <p className="text-sm font-semibold tracking-wide sm:text-base md:text-sm/looser">Introducing</p>
                     <h1 className="text-4xl font-semibold tracking-tighter sm:text-5xl md:text-6xl/looser">Martin Lacsamana</h1>
                     <div className="mx-auto max-w-3xl text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                        <TypewriterEffect text="AWS Certified Developer. Expert Google Searcher." typingSpeed={80}/>
+                        <TypewriterEffect text="AWS Certified Developer. Expert Google Searcher." typingSpeed={50}/>
                     </div>
                 </div>
 
                 {/* HEADSHOT */}
-                <div className="flex flex-col justify-center items-center -mt-8 mb-2">
+                <div className="flex flex-col justify-center items-center md:-mt-8 mb-2">
                     <img
-                        alt="Gallery Image 1"
-                        className="overflow-hidden rounded-md object-cover w-full max-w-xs"
+                        alt="Martin Lacsamana"
+                        className="overflow-hidden rounded-md object-cover w-full max-w-[200px] sm:max-w-xs"
                         src="https://personal-website-company-images.s3.us-west-1.amazonaws.com/MartinAvatarNoBackground.png"
                     />
                     <span className="text-xs text-gray-400 mt-2">(AI-generated)</span>
