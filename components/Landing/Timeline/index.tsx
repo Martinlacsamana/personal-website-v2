@@ -25,52 +25,70 @@ const Timeline = () => {
                 <h1 className="text-md text-center tracking-tighter text-gray-500 md:text-xl md:looser pb-12">Transforming observations into reality.</h1>
                 <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                     <TimelineItem
-                        year="2020"
-                        title="Tumalon"
-                        description="A brand to spread awareness on the harmful effects of CO2 emissions in the atmosphere. Did XYZ in order to."
+                        year="2017 - 2018"
+                        title="Promoted Climate Awareness"
+                        description="to a following of over 10K through a brand aimed at spreading awareness on the harmful effects of CO2 emissions in the atmosphere."
                         position="start"
                         svg="https://personal-website-company-images.s3.us-west-1.amazonaws.com/TumalonDownload.jpeg"
                     />
                     <TimelineItem
-                        year="2021"
-                        title="Ceros"
-                        description="Captured cross-functional workflows by shadowing a Senior Solutions Engineer while we met with key internal stakeholders during Ceros' typical daily customer life cycle journey and Software Development Life Cycle."
+                        year="2019"
+                        title="Presented to Senior Executives"
+                        description="that included the Chief Revenue Officer and VPs at Ceros, sharing insights on the customer life cycle from my internship experience."
                         position="end"
                         svg="https://personal-website-company-images.s3.us-west-1.amazonaws.com/Ceros.png"
                     />
                     <TimelineItem
                         year="2021"
-                        title="Graduation and accepted into UC Berkeley"
-                        description="Got into Berkeley which I was extremely excited for. This was my dream for a multitude of reasons. For many years..."
+                        title="Delivered a Speech to 1500+ People"
+                        description="about redefining normalcy during the pandemic as Class President, emphasizing the importance of staying connected as students and friends."
                         position="start"
-                        svg="https://personal-website-company-images.s3.us-west-1.amazonaws.com/Berkdownload.png"
+                        svg="https://personal-website-company-images.s3.us-west-1.amazonaws.com/ClearviewLogo.png"
                     />
+
                     <TimelineItem
-                        year="2021"
-                        title="Superlative Secret Society"
-                        description="Implemented workflows and streamlined communications between marketing, development, and customer success teams, resulting in secondary sales of 9 MILLION USD."
-                        position="end"
-                        svg="https://personal-website-company-images.s3.us-west-1.amazonaws.com/SuperlativeSS.jpeg"
-                    />
-                    <TimelineItem
-                        year="2021"
-                        title="Shaq Gives Back"
-                        description="Facilitated communication between our clients, customer success teams, and tech leads to help raise over 2 MILLION USD to provide tens of thousands of toys, clothing, and meals to underprivileged youth nationwide."
+                        year="Nov 2021 - Dec 2021"
+                        title="Helped Raise 2,000,000+ USD"
+                        description="to support underserved children nationwide as a community lead for Shaquille O' Neal's NFT drop."
                         position="end"
                         svg="https://personal-website-company-images.s3.us-west-1.amazonaws.com/ShaqGivesBack.avif"
                     />
+
                     <TimelineItem
-                        year="2023"
-                        title="Academic Intern"
-                        description="Covered a series of data structures, including but not limited to lists, graphs, stacks, queues, HashMaps, and graphs, along with runtime and space complexities, sorting algorithms, and abstract data types using Java language."
+                        year="Nov 2021 - Mar 2022"
+                        title="Donated 80,000+ Meals"
+                        description="to those in need worldwide as a Partnership & Development lead at a Web3 Company - Superlative Secret Society, while also boosting secondary sales to 9 MILLION USD."
                         position="start"
-                        svg="https://personal-website-company-images.s3.us-west-1.amazonaws.com/EECSBerkeley.png"
+                        svg="https://personal-website-company-images.s3.us-west-1.amazonaws.com/SuperlativeSS.jpeg"
+                    />
+                    
+                    <TimelineItem
+                        year="Jan 2023 - May 2023"
+                        title="Mentored 50+ CS Students"
+                        description="as an Academic Intern for CS61B at UC Berkeley, delivering a mini-lecture on HashMaps during my final week. "
+                        position="end"
+                        svg="https://personal-website-company-images.s3.us-west-1.amazonaws.com/BerkeleyEECS.jpg"
                     />
                     <TimelineItem
-                        year="Current"
-                        title="Elavize"
-                        description="Led the development of four key modules alongside their REST APIs using the MERN stack: the user profile, user discovery, career search, and results page. Designed complex search features for seamless user experience, enabling precise user and career discovery through optimized data fetches and introducing AI-driven insights for non-existing career data in the database."
+                        year="May 2023 - February 2024"
+                        title="Developed a Startup from the Ground Up"
+                        description="with a modern tech stack, handling database schemas, endpoints, and authentication integration while undergoing rapid iteration with user testing, throwing myself into the deep end and absorbing everything I could."
+                        position="start"
+                        svg="https://personal-website-company-images.s3.us-west-1.amazonaws.com/footer+copy.png"
+                    />
+
+                    <TimelineItem
+                        year="May 2023 - February 2024"
+                        title="Pursued AWS Developer Certification in 10 Days"
+                        description="driven by my lack of understanding about the cloud and my desire to continuously learn. I challenged myself to become AWS Certified developer within a time limit that inherently strengthened my system design principles."
                         position="end"
+                        svg="https://personal-website-company-images.s3.us-west-1.amazonaws.com/aws_logo_smile_1200x630.png"
+                    />          
+                    <TimelineItem
+                        year="Jun 2024 - Aug 2024"
+                        title="Course Corrected Job Seekers"
+                        description="from application to offer with personalized insights at each step of the way at Elavize, handling AI integrations and a job-tracking kanban."
+                        position="start"
                         svg="https://personal-website-company-images.s3.us-west-1.amazonaws.com/footer+copy.png"
                     />
                 </ul>
