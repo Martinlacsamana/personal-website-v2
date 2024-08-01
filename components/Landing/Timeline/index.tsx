@@ -71,16 +71,16 @@ const Timeline = () => {
                     />
                     <TimelineItem
                         year="May 2023 - February 2024"
-                        title="Developed a Startup from the Ground Up"
-                        description="with a modern tech stack, handling database schemas, endpoints, and authentication integration while undergoing rapid iteration with user testing, throwing myself into the deep end and absorbing everything I could."
+                        title="Developed an MVP"
+                        description="for a startup with a MERN (React/NextJS) tech stack, handling database schemas, endpoints, and authentication integration while undergoing rapid iteration with user testing."
                         position="start"
                         svg="https://personal-website-company-images.s3.us-west-1.amazonaws.com/footer+copy.png"
                     />
 
                     <TimelineItem
                         year="May 2023 - February 2024"
-                        title="Pursued AWS Developer Certification in 10 Days"
-                        description="driven by my lack of understanding about the cloud and my desire to continuously learn. I challenged myself to become AWS Certified developer within a time limit that inherently strengthened my system design principles."
+                        title="Completed AWS Developer Certification in 10 Days"
+                        description="driven by my limited understanding of cloud technologies and a strong desire to learn. I challenged myself within a tight timeframe, which ultimately strengthened my system design principles."
                         position="end"
                         svg="https://personal-website-company-images.s3.us-west-1.amazonaws.com/aws_logo_smile_1200x630.png"
                     />          

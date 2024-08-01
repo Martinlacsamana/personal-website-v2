@@ -10,7 +10,7 @@ const Hero = () => {
                     <p className="text-sm font-semibold tracking-wide sm:text-base md:text-sm/looser">Introducing</p>
                     <h1 className="text-4xl font-semibold tracking-tighter sm:text-5xl md:text-6xl/looser">Martin Lacsamana</h1>
                     <div className="mx-auto text-sm sm:text-lg max-w-3xl text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                        <TypewriterEffect text="AWS Certified Developer. Expert Google Searcher." typingSpeed={50}/>
+                        <TypewriterEffect text="EECS @ UC Berkeley. Certified AWS Developer." typingSpeed={50}/>
                     </div>
                 </div>
 
