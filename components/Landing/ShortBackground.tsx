@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const ShortBackground = () => {
     return (
@@ -19,7 +20,16 @@ const ShortBackground = () => {
                 {/* PICTURE */}
                 <div className="w-full flex justify-center items-center">
                     <div className="w-5/6 md:w-3/4 pt-2 pb-6">   
-                        <img src="https://personal-website-company-images.s3.us-west-1.amazonaws.com/Background.png" alt="Observing during childhood" className="w-full h-auto object-cover rounded-lg shadow"/>
+                        <Image 
+                            src="https://personal-website-company-images.s3.us-west-1.amazonaws.com/Background.png" 
+                            alt="Observing during childhood" 
+                            className="rounded-lg shadow" 
+                            layout="responsive" // Set layout to responsive
+                            width={800} // Specify the width for aspect ratio
+                            height={600} // Specify the height for aspect ratio
+                            style={{ objectFit: 'cover' }} // Maintain the object-fit style
+                            priority
+                        />
                     </div>
                 </div>
             </div>
