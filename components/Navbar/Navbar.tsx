@@ -17,9 +17,9 @@ const Navbar = () => {
             <div className="flex-none">
                 <ul className="menu menu-horizontal px-1 text-gray-500">
                     
-                    <li className="hover:text-black">
+                    {/* <li className="hover:text-black">
                         <a href="https://personal-website-random-assets.s3.us-west-1.amazonaws.com/Martin_Lacsamana___Resume+(2).pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-                    </li>
+                    </li> */}
                     <Links/>
                     
                     {/* <li className="hover:text-black"><a>Contact Me</a></li> */}
