@@ -5,8 +5,8 @@ const Links = () => {
 
     return (
         <div className="dropdown dropdown-end dropdown-hover">
-            <li tabIndex={0} className="hover:text-black"><a>Links</a></li>
-            <ul tabIndex={0} className="dropdown-content menu bg-white rounded-box z-[1] w-52 p-2 shadow">
+            <li tabIndex={0} className="hover:text-black"><a>Contact Me</a></li>
+            <ul tabIndex={0} className="dropdown-content menu bg-black rounded-box z-[1] w-52 p-2 shadow">
                 <li>
                     <a className="flex items-center" href="mailto:martinlacsamana@gmail.com" >
                         <Image 
