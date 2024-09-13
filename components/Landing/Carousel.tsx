@@ -5,7 +5,7 @@ import CarouselItem from "./Carouseltem";
 
 const Carousel = () => {
   const technologies = [
-
+    "Firebase",
     "NextJS",
     "NodeJS",
     "Django",
@@ -18,6 +18,7 @@ const Carousel = () => {
     "Docker",
     "Postman",
     "Linear",
+    "Firebase"
   ];
 
   let [ref, { width }] = useMeasure();
