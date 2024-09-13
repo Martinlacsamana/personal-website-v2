@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const ShortBackground = () => {
     return (
-        <div className="flex flex-col items-center justify-center pt-4 md:pt-8 md:pb-4">
+        <div className="flex flex-col items-center justify-center pt-4 md:pt-48 md:pb-4">
             <div className="flex flex-col md:flex-row w-full md:w-4/5 items-center">
                 
                 {/* TEXT */}

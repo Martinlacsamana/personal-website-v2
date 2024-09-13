@@ -5,8 +5,8 @@ const Links = () => {
 
     return (
         <div className="dropdown dropdown-end dropdown-hover">
-            <li tabIndex={0} className="hover:text-black"><a>Links</a></li>
-            <ul tabIndex={0} className="dropdown-content menu bg-white rounded-box z-[1] w-52 p-2 shadow">
+            <li tabIndex={0} className="hover:text-white hover:bg-gray-900 rounded-lg"><a>Contact Me</a></li>
+            <ul tabIndex={0} className="dropdown-content menu bg-black rounded-box z-[1] w-52 p-2 shadow">
                 <li>
                     <a className="flex items-center" href="mailto:martinlacsamana@gmail.com" >
                         <Image 
@@ -16,7 +16,7 @@ const Links = () => {
                             height={20} // Set appropriate height
                             className="" // Add margin to the right for spacing
                         />
-                        <p>Gmail</p>
+                        <p className="hover:text-white">Gmail</p>
                         
                     </a>
                 </li>

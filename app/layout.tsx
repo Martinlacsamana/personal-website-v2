@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     {
       rel: 'icon',
       url: 'https://personal-website-company-images.s3.us-west-1.amazonaws.com/MartinAvatarICON.png',
-      sizes: '16x16', // Specify the size
+      sizes: '16x16',
     },
   ],
 };
