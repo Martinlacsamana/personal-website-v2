@@ -2,9 +2,6 @@
 import React from 'react'
 import Hero from "@/components/Landing/Hero";
 import CodeGraphic from "@/components/Landing/CodeGraphic";
-import ShortBackground from '@/components/Landing/ShortBackground';
-import Timeline from '@/components/Landing/Timeline';
-import Carousel from '@/components/Landing/Carousel';
 import GradientSection from '@/components/Landing/SecondGradient';
 import Experiences from '@/components/Landing/Experiences/Experiences';
 import Projects from '@/components/Landing/Projects/Projects';
@@ -35,7 +32,6 @@ export default function Home() {
       <Projects/>
 
       
-
       {/* We will move this into a different page */}
       {/* <ShortBackground />
       <Timeline /> */}

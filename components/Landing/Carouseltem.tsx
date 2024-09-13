@@ -2,18 +2,19 @@ import React from "react";
 
 interface CarouselItemProps {
   tech: string;
+
 }
 
 const CarouselItem: React.FC<CarouselItemProps> = ({ tech }) => {
   return (
-    
+    <div className="w-32 h-32 flex items-center justify-center">
       <img
-        src={`/logos/postman-svgrepo-com.svg`}
+        src={`/logos/${tech.toLowerCase().replace(/\s+/g, '-')}.svg`}
         alt={`${tech} logo`}
-        className="h-32 w-auto filter grayscale"
-        style={{ display: 'block' }}
+        className="max-w-full max-h-full w-auto h-auto filter "
+        style={{ objectFit: 'contain' }}
       />
-
+    </div>
   );
 };
 

@@ -27,7 +27,7 @@ const Graphic = () => {
             {/* Foreground content */}
             <div  className="relative z-10 w-full h-full flex flex-col justify-center items-center text-white ">
                 <h2 className="text-4xl font-normal text-center w-1/2 text-gray-100 opacity-100 leading-[45px]">
-                    Leveraged tech to raise <br></br><span className=" bg-gradient-to-r from-yellow-200 via-red-300 to-pink-300 text-transparent bg-clip-text font-medium">84,000 meals</span> for children in need.
+                    Leveraged technology to raise <br></br><span className=" bg-gradient-to-r from-yellow-200 via-red-300 to-pink-300 text-transparent bg-clip-text font-medium">84,000 meals</span> for children in need.
                 </h2>
             </div>
         </div>

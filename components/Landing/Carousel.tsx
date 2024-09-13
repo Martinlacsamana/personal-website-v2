@@ -5,26 +5,19 @@ import CarouselItem from "./Carouseltem";
 
 const Carousel = () => {
   const technologies = [
-    "Postman",
+
     "NextJS",
-    "React",
     "NodeJS",
     "Django",
     "MongoDB",
     "AWS",
-    "Google Cloud",
     "Python",
     "Java",
-    "Javascript",
-    "RISC-V",
     "Golang",
     "Typescript",
-    "Sample 1",
-    "Sample 2",
-    "Sample 3",
-    "Sample 4",
-    "Sample 5",
-    "Sample 6"
+    "Docker",
+    "Postman",
+    "Linear",
   ];
 
   let [ref, { width }] = useMeasure();
@@ -37,7 +30,7 @@ const Carousel = () => {
 
     controls = animate(xTranslation, [0, finalPosition], {
       ease: "linear",
-      duration: 40,
+      duration: 80,
       repeat: Infinity,
       repeatType: "loop",
       repeatDelay: 0
@@ -48,7 +41,7 @@ const Carousel = () => {
   }, [xTranslation, width]);
 
   return (
-    <main className="pb-8">
+    <main className="pb-8 pt-6">
       <motion.div
         className="absolute left-0 flex gap-20"
         ref={ref}

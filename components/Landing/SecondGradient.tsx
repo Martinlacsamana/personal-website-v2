@@ -25,7 +25,7 @@ const GradientSection = () => {
       <div id="experiences" className="relative text-center pt-12 scroll-mt-20">
           <h1 className="text-4xl font-bold text-white opacity-80 tracking-wide">WORK EXPERIENCE</h1>
           <p className="text-xl text-white opacity-80 mt-4">
-            Striving to make <span className="text-yellow-400">impactful</span> tech.
+            Striving to develop <span className="text-yellow-400">impactful</span> tech.
           </p>
       </div>
       
