@@ -41,7 +41,7 @@ const Carousel = () => {
   }, [xTranslation, width]);
 
   return (
-    <main className="pb-8 pt-6">
+    <main className="pb-8 pt-2 md:pt-6">
       <motion.div
         className="absolute left-0 flex gap-20"
         ref={ref}

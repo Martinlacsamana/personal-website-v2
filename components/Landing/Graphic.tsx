@@ -17,7 +17,7 @@ const Graphic = () => {
             {/* Background text */}
             <div className="absolute inset-0 flex items-center justify-center">
                 <span 
-                    className="text-[450px] font-semibold text-gray-800 opacity-20 tracking-tight"
+                    className="text-[350px] md:text-[450px] font-semibold text-gray-800 opacity-20 tracking-tight"
                     style={outlineTextStyle}
                 >
                     84K
@@ -26,7 +26,7 @@ const Graphic = () => {
             
             {/* Foreground content */}
             <div  className="relative z-10 w-full h-full flex flex-col justify-center items-center text-white ">
-                <h2 className="text-4xl font-normal text-center w-1/2 text-gray-100 opacity-100 leading-[45px]">
+                <h2 className="text-3xl md:text-4xl font-normal text-center w-3/4 md:w-1/2 text-gray-100 opacity-100 leading-[45px]">
                     Leveraged technology to raise <br></br><span className=" bg-gradient-to-r from-yellow-200 via-red-300 to-pink-300 text-transparent bg-clip-text font-medium">84,000 meals</span> for children in need.
                 </h2>
             </div>
