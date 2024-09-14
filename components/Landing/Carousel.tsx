@@ -18,7 +18,6 @@ const Carousel = () => {
     "Docker",
     "Postman",
     "Linear",
-    "Firebase"
   ];
 
   let [ref, { width }] = useMeasure();
