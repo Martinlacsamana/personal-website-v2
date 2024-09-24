@@ -2,7 +2,7 @@ import React from "react"
 
 const Footer = () => {
     return (
-        <footer className="bg-black shadow-md py-8 pb-16">
+        <footer className="bg-black shadow-md py-8 pb-8 pt-24">
             <div className="container mx-auto text-center text-gray-500">
                 <div className="flex items-center justify-center">
                     <hr className="border-t border-gray-500 w-1/6" />
@@ -18,6 +18,14 @@ const Footer = () => {
                         </a>
                     </div>
                     <hr className="border-t border-gray-500 w-1/6" />
+                </div>
+
+                <div className="mt-4">
+                    <p className="text-sm text-gray-400">© {new Date().getFullYear()} Martin Lacsamana. All rights reserved.</p>
+
+                    <p className="text-sm mt-2 text-gray-500">
+                        Coded from scratch. No Squarespace was harmed in the making.
+                    </p>
                 </div>
             </div>
         </footer>
