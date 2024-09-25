@@ -24,7 +24,7 @@ const Footer = () => {
                     <p className="text-sm text-gray-400">© {new Date().getFullYear()} Martin Lacsamana. All rights reserved.</p>
 
                     <p className="text-sm mt-2 text-gray-500">
-                        Coded from scratch. No Squarespace was harmed in the making.
+                    Built using NextJS & TypeScript. No templates were harmed in the making.
                     </p>
                 </div>
             </div>

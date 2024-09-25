@@ -62,7 +62,7 @@ const Experiences = () => {
 
             <div className="experience-card order-2 sm:order-2">
                 {renderCard({
-                    hook: "Full-Stack Software Engineer",
+                    hook: "Software Engineer",
                     position: "Elavize",
                     children: (
                         <div className="space-y-6 text-xs opacity-60">
@@ -79,7 +79,7 @@ const Experiences = () => {
 
             <div className="experience-card order-3 sm:order-1">
                 {renderCard({
-                    hook: "Backend Software Engineer",
+                    hook: "Software Engineer",
                     position: "Metaverse HQ",
                     children: (
                         <div className="space-y-6 text-xs opacity-60">
