@@ -39,7 +39,7 @@ const Experiences = () => {
                 </p>
             </div>
 
-            <div className="experience-card order-1 sm:order-3">
+            <div id="SuperlativeSS" className="experience-card order-1 sm:order-3">
                 {renderCard({
                     hook: "Partnership & Development Lead",
                     position: "Superlative Secret Society",
