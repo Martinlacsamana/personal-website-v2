@@ -41,9 +41,10 @@ const Carousel = () => {
   }, [xTranslation, width]);
 
   return (
-    <main className="pb-8 pt-2 md:pt-6">
+    <main className="pb-8 pt-2 md:pt-6 relative group w-screen -ml-[50vw] left-1/2">
+      {/* Carousel - will stay visible but dim on hover */}
       <motion.div
-        className="absolute left-0 flex gap-20"
+        className="absolute left-0 flex gap-20 transition-opacity duration-300 group-hover:opacity-30"
         ref={ref}
         style={{ x: xTranslation }}
       >
@@ -51,6 +52,13 @@ const Carousel = () => {
           <CarouselItem key={index} tech={tech} />
         ))}
       </motion.div>
+
+      {/* Hover overlay with text */}
+      <div className="absolute inset-0 opacity-0 h-32 md:h-40 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+        <p className="bg-gray-900/60 px-6 py-3 rounded-xl text-gray-300/95 text-lg md:text-xl font-extralight tracking-[0.2em] uppercase backdrop-blur-sm">
+          Technologies Used
+        </p>
+      </div>
     </main>
   );
 };
