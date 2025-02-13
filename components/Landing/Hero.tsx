@@ -7,10 +7,10 @@ const Hero = () => {
             <div className="grid gap-6 md:gap-8 lg:gap-10 items-center justify-center text-center">
                 {/* INTRODUCTION TEXT */}
                 <div className="space-y-3">
-                    <p className="text-sm font-semibold tracking-wide opacity-80 sm:text-base md:text-sm/looser">Introducing</p>
-                    <h1 className="text-4xl font-semibold tracking-tighter opacity-80 sm:text-5xl md:text-6xl/looser">Martin Lacsamana</h1>
+                    <p className="text-sm font-semibold tracking-wide text-white opacity-80 sm:text-base md:text-sm/looser">Introducing</p>
+                    <h1 className="text-4xl font-semibold tracking-tighter text-white opacity-80 sm:text-5xl md:text-6xl/looser">Martin Lacsamana</h1>
                     <div className="mx-auto text-sm sm:text-lg max-w-3xl text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                        <TypewriterEffect text="EECS @ UC Berkeley | Full-Stack Developer at MetaverseHQ" typingSpeed={40}/>
+                        <TypewriterEffect text="Backend & Full-Stack Engineer | UC Berkeley EECS Alum" typingSpeed={40}/>
                     </div>
                 </div>
 

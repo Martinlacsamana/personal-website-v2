@@ -10,7 +10,7 @@ const Footer = () => {
                         <a href="https://linkedin.com/in/martin-lacsamana" target="_blank" rel="noopener noreferrer">
                             <img src="/logos/linkedin.svg" alt="LinkedIn" className="w-6 h-7 brightness-75 hover:brightness-100 transition-all duration-300" />
                         </a>
-                        <a href="mailto:martinlacsamana@gmail.com">
+                        <a href="mailto:martinlacsamana.dev@gmail.com">
                             <img src="/logos/gmail2.svg" alt="Gmail" className="w-8 h-8 brightness-75 hover:brightness-100 transition-all duration-300" />
                         </a>
                         <a href="https://github.com/Martinlacsamana" target="_blank" rel="noopener noreferrer">

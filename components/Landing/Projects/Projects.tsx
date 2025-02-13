@@ -31,7 +31,7 @@ const Projects = () => {
     );
 
     return (
-        <div id="projects" className="scroll-mt-20 pb-20">
+        <div id="projects" className="scroll-mt-20 pb-20 px-16">
             <div className="relative text-center pt-6 pb-24">
                 <h1 className="text-4xl font-bold text-white opacity-80 tracking-wide">PROJECTS</h1>
                 <p className="text-xl text-white opacity-80 mt-4">
@@ -58,6 +58,44 @@ const Projects = () => {
                         ]
                     })}
                 </div>
+
+                {/* <div className="project-card">
+                    {renderCard({
+                        hook: "Project Guardian",
+                        position: "NextJS, Django, FireStore",
+                        children: (
+                            <div className="space-y-6 text-xs">
+                                <p>
+                                Growing up family-oriented, I always dreamed of creating a personal guardian application. It stores and processes hundreds of journal entries, categorizing them with features like tags and sentiment scores. The goal is to eventually train an AI model on these experiences, creating a lasting resource for guidance, wisdom, and support—accessible to both me and my future children, transcending the limitations of time and mortality.
+                                </p>
+                            </div>
+                        ),
+                        image: "/ProjectGuardian2.png",
+                        links: [
+                            { label: "Front-End", url: "https://github.com/Martinlacsamana/project-guardian-frontend" },
+                            { label: "Back-End", url: "https://github.com/Martinlacsamana/project-guardian-backend" }
+                        ]
+                    })}
+                </div>
+
+                <div className="project-card">
+                    {renderCard({
+                        hook: "Project Guardian",
+                        position: "NextJS, Django, FireStore",
+                        children: (
+                            <div className="space-y-6 text-xs">
+                                <p>
+                                Growing up family-oriented, I always dreamed of creating a personal guardian application. It stores and processes hundreds of journal entries, categorizing them with features like tags and sentiment scores. The goal is to eventually train an AI model on these experiences, creating a lasting resource for guidance, wisdom, and support—accessible to both me and my future children, transcending the limitations of time and mortality.
+                                </p>
+                            </div>
+                        ),
+                        image: "/ProjectGuardian2.png",
+                        links: [
+                            { label: "Front-End", url: "https://github.com/Martinlacsamana/project-guardian-frontend" },
+                            { label: "Back-End", url: "https://github.com/Martinlacsamana/project-guardian-backend" }
+                        ]
+                    })}
+                </div> */}
 
                 <div className="project-card">
                     {renderCard({

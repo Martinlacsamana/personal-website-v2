@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-const ShortBackground = () => {
+const Apprentice = () => {
     return (
         <div className="flex flex-col items-center justify-center pt-4 md:pt-48 md:pb-4">
             <div className="flex flex-col md:flex-row w-full md:w-4/5 items-center">
@@ -9,7 +9,7 @@ const ShortBackground = () => {
                 {/* TEXT */}
                 <div className="w-full flex flex-col items-center justify-center space-y-4 text-center md:text-left  md:mb-0">
                     <p className="w-5/6 md:w-2/3 text-2xl md:text-3xl font-normal tracking-[-1.20px] leading-tight text-gray-700">
-                        Be relentless in the face of adversity,
+                        I learned and I listened.
                     </p>
                     <p className="w-5/6 md:w-2/3 text-md md:text-md font-light text-gray-500 pb-4">
                         my parents would always tell me growing up. They taught me that to achieve what I&apos;ve never had, I had to do things I&apos;ve never done.
@@ -37,4 +37,4 @@ const ShortBackground = () => {
     )
 }
 
-export default ShortBackground
+export default Apprentice

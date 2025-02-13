@@ -8,7 +8,7 @@ import Projects from '@/components/Landing/Projects/Projects';
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center overflow-hidden">
+    <div className="flex flex-col items-center overflow-hidden bg-black">
       <div className="relative w-full overflow-hidden">
         {/* Gradient background */}
         <div className="absolute inset-0 z-0">

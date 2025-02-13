@@ -62,7 +62,7 @@ const Experiences = () => {
 
             <div className="experience-card order-2 sm:order-2">
                 {renderCard({
-                    hook: "Software Engineer",
+                    hook: "Software Engineer Intern",
                     position: "Elavize",
                     children: (
                         <div className="space-y-6 text-xs opacity-60">
@@ -84,13 +84,23 @@ const Experiences = () => {
                     children: (
                         <div className="space-y-6 text-xs opacity-60">
                             <p>
-                            Building backend systems for the #1 Rewards Platform in the Metaverse, working behind the scenes to make missions safer and more accessible. I'm currently building a flagging system to report scam-like missions while ensuring safe mission visibility for verified and unverified organizations. Tech stack: Django, PostgreSQL, Docker, and Google Cloud.
+                            At the #1 Rewards Platform in the Metaverse, I helped shape the future of Web3 engagement by building systems that made the platform more secure and enjoyable for our community of 700K+ users. From enhancing security to optimizing performance, every line of code was written with our users' experience in mind. Tech stack: Django, PostgreSQL, Docker, and Google Cloud. For specific contributions,{' '}
+                            <span>
+                                <a 
+                                    href="https://personal-website-random-assets.s3.us-west-1.amazonaws.com/Martin_Lacsamana_Resume.pdf" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="text-blue-300 hover:text-blue-400 hover:underline"
+                                >
+                                 see resume here.
+                                </a>
+                            </span>
                             </p>
                         </div>
                     ),
                     textLeft: true,
                     image: "/MVHQ.png",
-                    year: "2024",
+                    year: "2024 - 2025",
                     link: "https://app.mvhq.io/"
                 })}
             </div>
