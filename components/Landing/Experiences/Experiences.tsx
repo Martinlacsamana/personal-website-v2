@@ -46,7 +46,7 @@ const Experiences = () => {
                     children: (
                         <div className="space-y-6 text-xs opacity-60">
                             <p>
-                            At the forefront of the NFT boom, I led a community of over 5,000 NFT holders, deeply immersed in blockchain technology and Web3 innovations. By streamlining communication between cross-functional teams, we achieved over $9 million in secondary sales. Through an auction involving our art and passionate collectors, we raised over $70,000 (including smaller initiatives) to provide 85,000+ meals to those in need globally.
+                            At the forefront of the NFT boom, I led a community of over 5,000 NFT holders, deeply immersed in blockchain technology and Web3 innovations. By streamlining communication between cross-functional teams, we achieved over $9 million in secondary sales. Through an auction involving our art and passionate collectors, we raised over $70,000 (including smaller initiatives) to provide 84,000+ meals to those in need globally.
                             </p>
                             <p>
                             This client-facing role introduced me to the transformative power of technology and inspired my journey into using it to hopefully create a positive impact in everyday life.
