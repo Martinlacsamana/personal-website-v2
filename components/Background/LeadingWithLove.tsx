@@ -28,7 +28,7 @@ const LeadingWithLove = () => {
               
               <div className="mb-3 text-martin-cyan text-2xl">☕</div>
               <p className="text-gray-300 leading-relaxed relative z-10">
-                <span className="text-martin-cyan font-medium">Smiling at the barista</span> making my coffee, asking how their day is going.
+                <span className="text-martin-cyan opacity-90 font-medium">Smiling at the barista</span> making my coffee, asking how their day is going.
               </p>
             </motion.div>
             
@@ -43,7 +43,7 @@ const LeadingWithLove = () => {
               
               <div className="mb-3 text-martin-pink text-2xl">👕</div>
               <p className="text-gray-300 leading-relaxed relative z-10">
-                <span className="text-martin-pink font-medium">Complimenting a stranger</span> on the street for a cool piece of outwear I haven't seen before.
+                <span className="text-martin-pink opacity-90 font-medium">Complimenting a stranger</span> on the street for a cool piece of outwear I haven't seen before.
               </p>
             </motion.div>
             
@@ -64,7 +64,9 @@ const LeadingWithLove = () => {
           </div>
           
           <p className="text-gray-300 text-lg leading-relaxed max-w-full">
-            I lead with love because it empowers everything else I do. The technology I aim to build. The target audience that I hope it reaches. I build because technology can bring change to people more than I can do alone.
+            <span className="font-bold uppercase text-rose-300">My purpose? </span>
+            I lead with love because it empowers everything that I do. The technology I aim to build. The target audience that I hope it reaches. I build because technology can bring change to people more than I can do alone.
+            My goal is simple: to leave the world better than I found it — for the people I love today, and the family I hope to raise someday.
           </p>
         </motion.div>
       </div>

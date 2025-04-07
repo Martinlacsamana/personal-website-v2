@@ -4,7 +4,6 @@ import Hero from "@/components/Background/Hero/Hero"
 import PersonalityIntro from "@/components/Background/PersonalityIntro"
 import LeadingWithLove from "@/components/Background/LeadingWithLove"
 import MyRoots from "@/components/Background/MyRoots"
-import Purpose from "@/components/Background/Purpose"
 import ChildhoodPhoto from "@/components/Background/ChildhoodPhoto"
 
 const Background = () => {
@@ -14,7 +13,6 @@ const Background = () => {
             <PersonalityIntro />
             <LeadingWithLove />
             <MyRoots />
-            <Purpose />
             <ChildhoodPhoto />
         </div>
     )

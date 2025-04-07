@@ -14,37 +14,33 @@ const MyRoots = () => {
           className="flex flex-col md:flex-row gap-12 items-center"
         >
           <div className="flex-1 space-y-6">
-            <h2 className="text-3xl md:text-4xl font-medium text-white">
-              My <span className="text-martin-pink">Roots</span>
+            <h2 className="text-1xl md:text-3xl font-base text-white">
+              It stems from my <span className="text-martin-cyan font-semibold opacity-90">roots..</span>
             </h2>
             
             <p className="text-gray-300 leading-relaxed">
-              I am the youngest of two older brothers and the son of immigrant parents. Having paved the way for me to exist and shine in this world, each of them have faced obstacles in the pursuit of success and did so with purpose.
+              I'm the youngest of two older brothers and the son of immigrant parents who paved the way for me to grow and thrive. Each of them faced their own share of hardship, yet met life’s harshest moments with calm and kindness.
             </p>
             
             <p className="text-gray-300 leading-relaxed">
-              The worst could be enacted upon them and yet... they remained calm and kind. Having watched from a distance from afar, this moment onward since I could remember was to execute and make impact where I can.
-            </p>
-            
-            <p className="text-gray-300 leading-relaxed">
-              From my upbringings, I was raised under the notion that hard work triumphs all. My parents taught me that to achieve what I've never had, I had to do things I've never done.
+              They've taught me many things, but what's stayed with me most is ambition rooted in kindness. Love your family. Love your friends. Love what you do. And when you feel lost — lead with love. Let it guide you through hard work, passion, and pain. Be the kind of person your future family can look up to.
             </p>
           </div>
           
           <div className="flex-1 flex justify-center">
-            <div className="relative w-full max-w-md aspect-square rounded-lg overflow-hidden bg-black border border-martin-pink-light">
-              {/* Placeholder for family image - replace with your actual image */}
-              <div className="absolute inset-0 flex items-center justify-center text-martin-pink">
-                Family Journey
-                {/* Once I grab the image, I'll uncomment this:
+            <div className="relative w-[400px] max-w-md aspect-square rounded-lg overflow-hidden bg-black border border-martin-pink-light">
+
+
+                
+               
                 <Image 
-                  src="/path-to-your-image.jpg"
+                  src="https://personal-website-random-assets.s3.us-west-1.amazonaws.com/CIMG1948.JPG"
                   alt="Family journey"
                   fill
                   className="object-cover"
                 />
-                */}
-              </div>
+               
+         
             </div>
           </div>
         </motion.div>

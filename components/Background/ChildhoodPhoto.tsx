@@ -17,14 +17,14 @@ const ChildhoodPhoto = () => {
             {/* Placeholder for childhood photo - replace with your actual image */}
             <div className="absolute inset-0 flex items-center justify-center text-martin-cyan">
               Childhood Photo
-              {/* Boots n catz
+              Boots n catz
               <Image 
-                src="/path-to-your-childhood-photo.jpg"
+                src="https://personal-website-company-images.s3.us-west-1.amazonaws.com/Background.png"
                 alt="Watching my brothers"
                 fill
                 className="object-cover"
               />
-              */}
+             
             </div>
           </div>
           
