@@ -6,7 +6,7 @@ import { Spotlight } from "@/components/ui/spotlight"
 const PersonalityIntro = () => {
   // TODO: ADD A SPOTLIGHT EFFECT HERE FROM ACERNITY UI
   return (
-    <div id="background-intro" className="flex flex-col items-center justify-center w-full py-16 px-4 bg-black scroll-mt-32">
+    <div id="background-intro" className="background-section flex flex-col items-center justify-center w-full py-16 px-4 bg-black scroll-mt-32">
       <div className="w-full max-w-4xl mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}

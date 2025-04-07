@@ -5,7 +5,7 @@ import Image from "next/image"
 
 const ChildhoodPhoto = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full py-16 px-4 bg-black">
+    <div className="background-section flex flex-col items-center justify-center w-full py-16 px-4 bg-black">
       <div className="w-full max-w-4xl mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
