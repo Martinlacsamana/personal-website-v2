@@ -19,6 +19,18 @@ const config: Config = {
   		colors: {
   			'elavize-custom': '#BC58FF',
   			'amazon-custom': '#1399FF',
+  			'martin-cyan': {
+  				DEFAULT: 'rgba(92,195,250,1)',
+  				light: 'rgba(92,195,250,0.28)'
+  			},
+  			'martin-pink': {
+  				DEFAULT: 'rgba(250,117,248,1)',
+  				light: 'rgba(250,117,248,0.28)'
+  			},
+  			'martin-purple': {
+  				DEFAULT: 'rgba(158,110,230,1)',
+  				light: 'rgba(158,110,230,0.28)'
+  			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

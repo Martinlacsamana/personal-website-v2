@@ -1,25 +1,23 @@
 "use client"
 import React from "react"
-import Apprentice from '@/components/Background/Apprentice';
-import Timeline from '@/components/Background/Timeline';
-import Hero from "@/components/Background/Hero/Hero";
-import Computer from "@/components/Background/Hero/Computer";
-import FamilyIntro from "@/components/Background/FamilyIntro";
-import Advices from "@/components/Background/Carousel/Prompts";
+import Hero from "@/components/Background/Hero/Hero"
+import PersonalityIntro from "@/components/Background/PersonalityIntro"
+import LeadingWithLove from "@/components/Background/LeadingWithLove"
+import MyRoots from "@/components/Background/MyRoots"
+import Purpose from "@/components/Background/Purpose"
+import ChildhoodPhoto from "@/components/Background/ChildhoodPhoto"
 
 const Background = () => {
-
     return (
         <div className="bg-black">
             <Hero />
-            <FamilyIntro />
-            <Advices />
-            <Apprentice />
-            
+            <PersonalityIntro />
+            <LeadingWithLove />
+            <MyRoots />
+            <Purpose />
+            <ChildhoodPhoto />
         </div>
     )
-
-
 }
 
 export default Background

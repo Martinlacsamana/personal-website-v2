@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion"
 import FloatingPaths from "./FloatingPaths"
-import Computer from "./Computer"
 import { LampDemo } from "@/components/ui/lamp"
 
 export default function Hero({
