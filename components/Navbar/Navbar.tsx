@@ -20,7 +20,7 @@ const Navbar = () => {
             {/* Background, Blogs, Links */}
             <div className="flex-none font-extralight text-white text-opacity-100 text-[15.6px] tracking-[0] leading-6 whitespace-nowrap">
                 <ul className="menu menu-horizontal px-1">
-                    <li tabIndex={0} className="hover:text-white hover:bg-gray-900 rounded-lg hidden md:block">
+                    <li tabIndex={0} className="hover:text-white hover:bg-gray-900 rounded-lg ">
                         <Link href="/background">About Me</Link>
                     </li>
                    
