@@ -12,8 +12,8 @@ const LeadingWithLove = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="flex flex-col space-y-8"
         >
-          <h2 className="text-3xl md:text-4xl font-medium text-white">
-            I lead with <span className="text-martin-cyan">love</span>. It could be...
+          <h2 className="text-3xl md:text-4xl font-light text-white">
+            I lead with <span className="text-martin-cyan font-semibold">love</span>. It could be...
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { ArrowDown } from "lucide-react";
 
 export function LampDemo() {
   return (
@@ -32,7 +33,7 @@ export const LampContainer = ({
   return (
     <div
       className={cn(
-        "relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-black w-full rounded-md z-0",
+        "relative flex h-[100vh] flex-col items-center justify-center overflow-hidden bg-black w-full rounded-md z-0",
         className
       )}
     >
@@ -99,6 +100,25 @@ export const LampContainer = ({
       <div className="relative z-50 flex -translate-y-80 flex-col items-center px-5">
         {children}
       </div>
+
+      <motion.div
+        initial={{ opacity: 0.5, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+        className="absolute bottom-20 mb-8 animate-bounce z-50"
+        onClick={ () => {
+          const intro = document.getElementById('background-intro');
+          intro?.scrollIntoView({ behavior: 'smooth'});
+        }
+
+        }
+      >
+        <ArrowDown className="h-8 w-8 text-white border rounded-full p-1 cursor-pointer hover:text-martin-cyan hover:border-martin-cyan" />
+      </motion.div>
     </div>
   );
 };
