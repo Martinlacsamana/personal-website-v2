@@ -16,7 +16,7 @@ const PersonalityIntro = () => {
         >
            <h2 className="text-center text-2xl md:text-2xl lg:text-4xl font-light tracking-tight text-white">
             I am authentically myself - overtly<span className="text-cyan-400 opacity-90 font-semibold"> ambitious</span>, partly <span className="text-rose-400/90 italic">sarcastic</span>,{" "}
-            and constantly <span className="text-slate-400 underline">caffeinated</span>. <span className="spotlight-target">Most importantly...</span>
+            and perpetually <span className="text-slate-400 underline">caffeinated</span>. <span className="spotlight-target">Most importantly...</span>
           </h2>
         </motion.div>
       </div>

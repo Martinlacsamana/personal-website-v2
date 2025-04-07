@@ -51,7 +51,7 @@ const Projects = () => {
       id: "interview-prep",
       title: "Interview Prep AI-Agent",
       description:
-        "Built with Flask+Unicorn, this Telegram bot generates coding challenges and provides personalized feedback. Integrates OpenAI API, uses MongoDB for user data tracking, and features automated email alerts via SendGrid.",
+        "Built with Flask + Uvicorn, this Telegram bot generates coding challenges and provides personalized feedback. Integrates OpenAI API, uses MongoDB for user data tracking, and features automated email alerts via SendGrid.",
       technologies: ["Flask", "OpenAI", "MongoDB", "Docker", "GCP"],
       image: "https://tii.imgix.net/production/articles/12694/e31f7eae-c356-478d-b311-98f1536297a8.jpg?auto=compress&fit=crop&auto=format",
       links: [

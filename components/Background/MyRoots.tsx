@@ -15,15 +15,15 @@ const MyRoots = () => {
         >
           <div className="flex-1 space-y-6">
             <h2 className="text-1xl md:text-3xl font-base text-white">
-              It stems from my <span className="text-martin-cyan font-semibold opacity-90">roots..</span>
+              It stems from my <span className="text-martin-cyan font-semibold opacity-90">roots...</span>
             </h2>
             
             <p className="text-gray-300 leading-relaxed">
-              I'm the youngest of two older brothers and the son of immigrant parents who paved the way for me to grow and thrive. Each of them faced their own share of hardship, yet met life’s harshest moments with calm and kindness.
+              I'm the youngest of two older brothers and the son of immigrant parents who paved the way for me to grow and thrive. Each of them faced hardship, yet met life's toughest moments with purpose.
             </p>
             
             <p className="text-gray-300 leading-relaxed">
-              They've taught me many things, but what's stayed with me most is ambition rooted in kindness. Love your family. Love your friends. Love what you do. And when you feel lost — lead with love. Let it guide you through hard work, passion, and pain. Be the kind of person your future family can look up to.
+              They've taught me many things -- but what stayed with me most is ambition rooted in kindness. Love your family. Love your friends. Love what you do. <span className="text-white font-bold">And when you feel lost, lead with love.</span> Let it guide you through hard work, passion, and pain. Be the kind of person younger Martin would look up to.
             </p>
           </div>
           
