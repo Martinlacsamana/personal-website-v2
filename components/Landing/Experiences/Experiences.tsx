@@ -39,7 +39,7 @@ const Experiences = () => {
                 </p>
             </div>
 
-            <div id="SuperlativeSS" className="experience-card order-1 sm:order-3">
+            <div id="SuperlativeSS" className="experience-card order-1 sm:order-4">
                 {renderCard({
                     hook: "Partnership & Development Lead",
                     position: "Superlative Secret Society",
@@ -60,7 +60,7 @@ const Experiences = () => {
                 })}
             </div>
 
-            <div className="experience-card order-2 sm:order-2">
+            <div className="experience-card order-2 sm:order-3">
                 {renderCard({
                     hook: "Founding Engineer",
                     position: "Elavize",
@@ -77,9 +77,9 @@ const Experiences = () => {
                 })}
             </div>
 
-            <div className="experience-card order-3 sm:order-1">
+            <div className="experience-card order-3 sm:order-2">
                 {renderCard({
-                    hook: "Software Engineer",
+                    hook: "Backend Engineer",
                     position: "Metaverse HQ",
                     children: (
                         <div className="space-y-6 text-xs opacity-60">
@@ -102,6 +102,24 @@ const Experiences = () => {
                     image: "/MVHQ.png",
                     year: "2024 - 2025",
                     link: "https://app.mvhq.io/"
+                })}
+            </div>
+
+            <div id="Ataraxis" className="experience-card order-4 sm:order-1">
+                {renderCard({
+                    hook: "Full Stack Engineer",
+                    position: "Ataraxis AI",
+                    children: (
+                        <div className="space-y-6 text-xs opacity-60">
+                            <p>
+                            Leading platform and integrations to bring our AI models into the hands of clinicians, working to enhance cancer care for millions of patients. Hoping to build a better tomorrow with precision oncology at scale.
+                            </p>
+                        </div>
+                    ),
+                    textLeft: false,
+                    image: "/AtaraxisBackground.JPG",
+                    year: "2025 - Present",
+                    link: "https://www.ataraxis.ai/"
                 })}
             </div>
         </div>
