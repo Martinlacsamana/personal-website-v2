@@ -14,7 +14,7 @@ interface Props {
 const ExperienceCard = ({hook, position, year, children, textLeft, image, link}: Props) => {
     const textContent = (
         <div className="flex-1 space-y-6 max-w-xl">
-            <h2 className="w-2/3 text-4xl font-normal text-white">{hook}</h2>
+            <h2 className="w-3/4 text-4xl font-normal text-white">{hook}</h2>
             <h1 className="text-lg text-white font-semibold opacity-100">
                 {position} <span className="mx-2">·</span> <span className="italic font-light text-md">{year}</span>
             </h1>
