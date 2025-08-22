@@ -82,17 +82,6 @@ const Projects = () => {
       ],
     },
     {
-      id: "resume-analyzer",
-      title: "Resume Keyword Analyzer",
-      description:
-        "Helps job seekers optimize their resumes by analyzing job descriptions and identifying key missing keywords. Streamlines the application process by ensuring resume alignment with job requirements.",
-      technologies: ["Python"],
-      image: "https://personal-website-random-assets.s3.us-west-1.amazonaws.com/ResumeWordAnaylyzer.png",
-      links: [
-        { type: "github", url: "https://github.com/Martinlacsamana/resume-keyword-analyzer" },
-      ],
-    },
-    {
       id: "learnify",
       title: "Learnify",
       description:
