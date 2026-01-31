@@ -107,7 +107,7 @@ const Experiences = () => {
 
             <div id="Ataraxis" className="experience-card order-4 sm:order-1">
                 {renderCard({
-                    hook: "Full Stack Engineer",
+                    hook: "Founding Platform Engineer",
                     position: "Ataraxis AI",
                     children: (
                         <div className="space-y-6 text-xs opacity-60">
