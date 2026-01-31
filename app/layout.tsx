@@ -4,6 +4,7 @@ import Head from "next/head";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer";
+import CursorGlow from "@/components/CursorGlow";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -35,6 +36,7 @@ export default function RootLayout({
           />
       </Head>
       <body className={inter.className}>
+        <CursorGlow />
         <Navbar />
         {children}
         <Footer/>
