@@ -1,45 +1,102 @@
 "use client"
-import React from 'react'
-import Links from './Links'
-import Link from 'next/link'
+import React, { useEffect, useState } from "react"
+import Link from "next/link"
+import Links from "./Links"
+import { cn } from "@/lib/utils"
 
+/** Past this offset, switch into pill mode (when currently wide). */
+const SCROLL_ENTER = 40
+/**
+ * Past this offset, switch back to wide (when currently pill).
+ * Lower than SCROLL_ENTER so layout changes near the boundary cannot
+ * bounce scrollY across one threshold forever (Schmitt trigger).
+ */
+const SCROLL_LEAVE = 20
 
 const Navbar = () => {
-    return (
-        <div className="navbar sticky top-0 z-50 bg-black opacity-80 backdrop-blur-sm">
-            {/* Martin */}
-            <div className="flex-1">
-                <Link href="/"
-                    className="btn btn-ghost text-xl font-light tracking-[0] leading-6 whitespace-nowrap text-white text-opacity-90 hover:text-opacity-100 transition-opacity">
-                        Martin
-                    
-                </Link>
-            </div>
-    
-    
-            {/* Background, Blogs, Links */}
-            <div className="flex-none font-extralight text-white text-opacity-100 text-[15.6px] tracking-[0] leading-6 whitespace-nowrap">
-                <ul className="menu menu-horizontal px-1">
-                    <li tabIndex={0} className="hover:text-white hover:bg-gray-900 rounded-lg ">
-                        <Link href="/background">About Me</Link>
-                    </li>
-                   
-                    <li tabIndex={0} className="hover:text-white hover:bg-gray-900 rounded-lg hidden md:block">
-                        <Link href="/#experiences">Experiences</Link>
-                    </li>
-                    <li tabIndex={0} className="hover:text-white hover:bg-gray-900 rounded-lg hidden md:block">
-                        <Link href="/#projects">Projects</Link>
-                    </li>
-                    {/* <li tabIndex={0} className="hover:text-black">
-                        <Link href="/background">Background</Link>
-                    </li> */}
-                    <Links/>
+  const [scrolled, setScrolled] = useState(false)
+  const [reduceMotion, setReduceMotion] = useState(false)
 
-                </ul>
-            </div>
+  useEffect(() => {
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)")
+    setReduceMotion(mq.matches)
+    const onChange = () => setReduceMotion(mq.matches)
+    mq.addEventListener("change", onChange)
+    return () => mq.removeEventListener("change", onChange)
+  }, [])
+
+  useEffect(() => {
+    const onScroll = () => {
+      const y = window.scrollY
+      setScrolled((prev) => {
+        if (prev) {
+          return y >= SCROLL_LEAVE
+        }
+        return y > SCROLL_ENTER
+      })
+    }
+    onScroll()
+    window.addEventListener("scroll", onScroll, { passive: true })
+    return () => window.removeEventListener("scroll", onScroll)
+  }, [])
+
+  return (
+    <div
+      className={cn(
+        "pointer-events-none sticky top-0 z-50 flex w-full justify-center",
+        scrolled && "px-3 pt-2 sm:px-4"
+      )}
+    >
+      <nav
+        aria-label="Main"
+        className={cn(
+          "pointer-events-auto flex w-full min-h-0 items-center justify-between gap-4 text-white",
+          !reduceMotion &&
+            "transition-[max-width,border-radius,padding,background-color,box-shadow,border-color] duration-300 ease-out",
+          scrolled
+            ? "max-w-3xl rounded-full border border-white/15 bg-white/10 px-4 py-1.5 shadow-lg shadow-black/25 backdrop-blur-xl sm:px-6 sm:py-1.5"
+            : "navbar max-w-full min-h-0 rounded-none border border-transparent bg-black opacity-80 backdrop-blur-sm"
+        )}
+      >
+        <div className="flex-1">
+          <Link
+            href="/"
+            className={cn(
+              scrolled
+                ? "btn btn-ghost min-h-0 h-auto px-2 py-1 text-lg font-light leading-tight tracking-[0] text-white text-opacity-90 transition-opacity hover:text-opacity-100"
+                : "btn btn-ghost text-xl font-light tracking-[0] leading-6 whitespace-nowrap text-white text-opacity-90 transition-opacity hover:text-opacity-100"
+            )}
+          >
+            Martin
+          </Link>
         </div>
-    )
 
+        <div
+          className={cn(
+            "flex-none tracking-[0] whitespace-nowrap",
+            scrolled
+              ? "font-extralight text-[15px] leading-tight text-white text-opacity-100"
+              : "font-extralight text-[15.6px] leading-6 text-white text-opacity-100"
+          )}
+        >
+          <ul
+            className={cn(
+              "menu menu-horizontal px-1",
+              scrolled && "menu-sm min-h-0 py-0"
+            )}
+          >
+            <li
+              tabIndex={0}
+              className="rounded-lg hover:bg-white/10 hover:text-white"
+            >
+              <Link href="/background">About Me</Link>
+            </li>
+            <Links pillStyle={scrolled} />
+          </ul>
+        </div>
+      </nav>
+    </div>
+  )
 }
 
 export default Navbar

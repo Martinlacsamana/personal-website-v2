@@ -84,17 +84,7 @@ const Experiences = () => {
                     children: (
                         <div className="space-y-6 text-xs opacity-60">
                             <p>
-                            At the #1 Rewards Platform in the Metaverse, I helped shape the future of Web3 engagement by building systems that made the platform more secure and enjoyable for our community of 700K+ users. From enhancing security to optimizing performance, every line of code was written with our users' experience in mind. Tech stack: Django, PostgreSQL, Docker, and Google Cloud. For specific contributions,{' '}
-                            <span>
-                                <a 
-                                    href="https://personal-website-random-assets.s3.us-west-1.amazonaws.com/Martin_Lacsamana_Resume.pdf" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    className="text-blue-300 hover:text-blue-400 hover:underline"
-                                >
-                                 see resume here.
-                                </a>
-                            </span>
+                            At the #1 Rewards Platform in the Metaverse, I helped shape the future of Web3 engagement by building systems that made the platform more secure and enjoyable for our community of 700K+ users. From enhancing security to optimizing performance, every line of code was written with our users' experience in mind. Tech stack: Django, PostgreSQL, Docker, and Google Cloud.
                             </p>
                         </div>
                     ),
