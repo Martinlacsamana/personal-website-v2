@@ -27,7 +27,7 @@ const MyRoots = () => {
             <p className="text-gray-300 text-lg leading-relaxed">
               They've taught me many things -- but what stayed with me most is ambition rooted in kindness. Love your family. Love your friends. Love what you do.{" "}
               <span className="text-white font-bold">And when you feel lost, lead with love.</span>{" "}
-              Let it guide you through hard work, passion, and pain. Be the kind of person younger Martin would look up to.
+              Let it guide you through hard work, passion, and pain. Above all, be the kind of person younger Martin would look up to.
             </p>
           </motion.div>
 
