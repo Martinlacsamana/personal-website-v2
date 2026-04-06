@@ -19,6 +19,15 @@ export const metadata: Metadata = {
       sizes: '16x16',
     },
   ],
+  openGraph: {
+    title: "Martin Lacsamana | Software Engineer",
+    description: "AWS Certified Developer. Expert Google Searcher.",
+    images: [
+      {
+        url: "https://personal-website-company-images.s3.us-west-1.amazonaws.com/MartinAvatarICON.png",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
