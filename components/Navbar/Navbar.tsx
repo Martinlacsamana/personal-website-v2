@@ -16,8 +16,11 @@ const SCROLL_ENTER = 40
  */
 const SCROLL_LEAVE = 20
 
+const MOBILE_BREAKPOINT = 768
+
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
   const [reduceMotion, setReduceMotion] = useState(false)
   const [isPlaying, setIsPlaying] = useState(false)
   const audioRef = useRef<HTMLAudioElement>(null)
@@ -49,6 +52,14 @@ const Navbar = () => {
   }, [])
 
   useEffect(() => {
+    const mq = window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT - 1}px)`)
+    setIsMobile(mq.matches)
+    const onChange = () => setIsMobile(mq.matches)
+    mq.addEventListener("change", onChange)
+    return () => mq.removeEventListener("change", onChange)
+  }, [])
+
+  useEffect(() => {
     const onScroll = () => {
       const y = window.scrollY
       setScrolled((prev) => {
@@ -63,13 +74,15 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
 
+  const pill = isMobile || scrolled
+
   return (
     <>
     <audio ref={audioRef} src="/song.mp3" onEnded={handleEnded} preload="metadata" />
     <div
       className={cn(
         "pointer-events-none sticky top-0 z-50 flex w-full justify-center",
-        scrolled && "px-3 pt-2 sm:px-4"
+        pill && "px-3 pt-2 sm:px-4"
       )}
     >
       <nav
@@ -78,7 +91,7 @@ const Navbar = () => {
           "pointer-events-auto flex w-full min-h-0 items-center justify-between gap-4 text-white",
           !reduceMotion &&
             "transition-[max-width,border-radius,padding,background-color,box-shadow,border-color] duration-300 ease-out",
-          scrolled
+          pill
             ? "max-w-3xl rounded-full border border-white/15 bg-white/10 px-4 py-1.5 shadow-lg shadow-black/25 backdrop-blur-xl sm:px-6 sm:py-1.5"
             : "navbar max-w-full min-h-0 rounded-none border border-transparent bg-black opacity-80 backdrop-blur-sm"
         )}
@@ -87,12 +100,12 @@ const Navbar = () => {
           <Link
             href="/"
             className={cn(
-              scrolled
+              pill
                 ? "btn btn-ghost min-h-0 h-auto px-2 py-0.5 transition-opacity hover:opacity-80"
                 : "btn btn-ghost text-xl font-light tracking-[0] leading-6 whitespace-nowrap text-white text-opacity-90 transition-opacity hover:text-opacity-100"
             )}
           >
-            {scrolled ? (
+            {pill ? (
               <Image
                 src="/mar-logo.png"
                 alt="Mar logo"
@@ -107,12 +120,12 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <AudioPlayer isPlaying={isPlaying} onToggle={togglePlay} visible={!scrolled} />
+        <AudioPlayer isPlaying={isPlaying} onToggle={togglePlay} visible={!pill} />
 
         <div
           className={cn(
             "flex flex-1 justify-end tracking-[0] whitespace-nowrap",
-            scrolled
+            pill
               ? "font-extralight text-[15px] leading-tight text-white text-opacity-100"
               : "font-extralight text-[15.6px] leading-6 text-white text-opacity-100"
           )}
@@ -120,7 +133,7 @@ const Navbar = () => {
           <ul
             className={cn(
               "menu menu-horizontal px-1",
-              scrolled && "menu-sm min-h-0 py-0"
+              pill && "menu-sm min-h-0 py-0"
             )}
           >
             <li
@@ -129,12 +142,12 @@ const Navbar = () => {
             >
               <Link href="/background">About Me</Link>
             </li>
-            <Links pillStyle={scrolled} />
+            <Links pillStyle={pill} />
           </ul>
         </div>
       </nav>
     </div>
-    <FloatingAudioPlayer isPlaying={isPlaying} onToggle={togglePlay} scrolled={scrolled} />
+    <FloatingAudioPlayer isPlaying={isPlaying} onToggle={togglePlay} scrolled={pill} />
     </>
   )
 }
