@@ -1,9 +1,19 @@
 import React from "react"
+import Image from "next/image"
 
 const Footer = () => {
     return (
         <footer className="bg-black shadow-md py-8 pb-8 pt-24">
             <div className="container mx-auto text-center text-gray-500">
+                <div className="flex justify-center mb-6">
+                    <Image
+                        src="/mar-logo.png"
+                        alt="Mar logo"
+                        width={240}
+                        height={80}
+                        className="h-24 w-auto opacity-80"
+                    />
+                </div>
                 <div className="flex items-center justify-center">
                     <hr className="border-t border-gray-500 w-1/6" />
                     <div className="flex space-x-8 px-8">

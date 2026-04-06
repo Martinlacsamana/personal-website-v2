@@ -1,5 +1,6 @@
 "use client"
 import React, { useEffect, useState } from "react"
+import Image from "next/image"
 import Link from "next/link"
 import Links from "./Links"
 import { cn } from "@/lib/utils"
@@ -63,11 +64,22 @@ const Navbar = () => {
             href="/"
             className={cn(
               scrolled
-                ? "btn btn-ghost min-h-0 h-auto px-2 py-1 text-lg font-light leading-tight tracking-[0] text-white text-opacity-90 transition-opacity hover:text-opacity-100"
+                ? "btn btn-ghost min-h-0 h-auto px-2 py-0.5 transition-opacity hover:opacity-80"
                 : "btn btn-ghost text-xl font-light tracking-[0] leading-6 whitespace-nowrap text-white text-opacity-90 transition-opacity hover:text-opacity-100"
             )}
           >
-            Martin
+            {scrolled ? (
+              <Image
+                src="/mar-logo.png"
+                alt="Mar logo"
+                width={120}
+                height={40}
+                className="h-9 w-auto"
+                priority
+              />
+            ) : (
+              "Martin"
+            )}
           </Link>
         </div>
 
