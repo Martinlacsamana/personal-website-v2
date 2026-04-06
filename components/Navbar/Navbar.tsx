@@ -1,8 +1,10 @@
 "use client"
-import React, { useEffect, useState } from "react"
+import React, { useCallback, useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import Links from "./Links"
+import AudioPlayer from "./AudioPlayer"
+import FloatingAudioPlayer from "./FloatingAudioPlayer"
 import { cn } from "@/lib/utils"
 
 /** Past this offset, switch into pill mode (when currently wide). */
@@ -17,6 +19,26 @@ const SCROLL_LEAVE = 20
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false)
   const [reduceMotion, setReduceMotion] = useState(false)
+  const [isPlaying, setIsPlaying] = useState(false)
+  const audioRef = useRef<HTMLAudioElement>(null)
+
+  const togglePlay = useCallback(() => {
+    const audio = audioRef.current
+    if (!audio) return
+    if (isPlaying) {
+      audio.pause()
+    } else {
+      audio.play()
+    }
+    setIsPlaying(!isPlaying)
+  }, [isPlaying])
+
+  const handleEnded = useCallback(() => {
+    const audio = audioRef.current
+    if (!audio) return
+    audio.currentTime = 0
+    audio.play()
+  }, [])
 
   useEffect(() => {
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)")
@@ -42,6 +64,8 @@ const Navbar = () => {
   }, [])
 
   return (
+    <>
+    <audio ref={audioRef} src="/song.mp3" onEnded={handleEnded} preload="metadata" />
     <div
       className={cn(
         "pointer-events-none sticky top-0 z-50 flex w-full justify-center",
@@ -83,9 +107,11 @@ const Navbar = () => {
           </Link>
         </div>
 
+        <AudioPlayer isPlaying={isPlaying} onToggle={togglePlay} visible={!scrolled} />
+
         <div
           className={cn(
-            "flex-none tracking-[0] whitespace-nowrap",
+            "flex flex-1 justify-end tracking-[0] whitespace-nowrap",
             scrolled
               ? "font-extralight text-[15px] leading-tight text-white text-opacity-100"
               : "font-extralight text-[15.6px] leading-6 text-white text-opacity-100"
@@ -108,6 +134,8 @@ const Navbar = () => {
         </div>
       </nav>
     </div>
+    <FloatingAudioPlayer isPlaying={isPlaying} onToggle={togglePlay} scrolled={scrolled} />
+    </>
   )
 }
 
