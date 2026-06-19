@@ -53,8 +53,7 @@ export default function ForSina() {
         <br />
         <p>
           (Unofficially) It&apos;s been a pleasure to be your manager. I would
-          hire you again in a heartbeat. Take care of our children for me (our
-          codebases lol).
+          hire you again in a heartbeat. Take care of our platform for me.
         </p>
         <br />
         <p className="text-right">— Martin</p>
